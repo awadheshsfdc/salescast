@@ -1,0 +1,620 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#navBar {
+    /* position: fixed; */
+    z-index: 99;
+    width: 100%;
+    height: 70px;
+}
+
+.imgHeader {
+    width: 135px;
+}
+
+.navDev a {
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+.custom_Btn_Dev {
+    color: #fff;
+    border: 1px solid #ccc;
+    background-color: orangered;
+    transition: 0.5s;
+}
+
+.custom_Btn_Dev:hover {
+    background-color: #0176d3;
+    color: #fff;
+}
+
+#cursor {
+    width: 20px;
+    height: 20px;
+    background-color: #95c11e;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 99;
+}
+
+
+#main {
+    position: relative;
+    /* background-color: rgba(0, 0, 0, 0.326); */
+}
+
+.mainBannerImg {
+    height: 500px;
+    object-fit: cover;
+}
+
+.leftWrapper {
+    padding-top: 8rem;
+}
+
+#firstwrapper {
+    background-color: #000;
+    width: 100%;
+    padding-bottom: 8rem;
+    /* height: 100vh; */
+}
+
+.mainTitle {
+    color: #fff;
+    font-size: 50px;
+    font-weight: 900;
+    letter-spacing: 0.5px;
+}
+
+.mainPara {
+    color: #fff;
+    font-size: 17px;
+    letter-spacing: 0.5px;
+}
+
+.Btn_Dev {
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 2% 4%;
+    background-color: transparent;
+    
+
+}
+
+#secondWrapper {
+    width: 75%;
+    padding-top: 2rem;
+    background-color: #fff;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    margin: -70px auto 0 auto;
+    padding: 30px 10px 20px 10px;
+}
+
+.aboutTitle {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.aboutPara {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.aboutImg {
+    /* object-fit: cover; */
+    border-radius: 5px;
+}
+
+.aboutCenter {
+    padding-top: 10px;
+}
+
+#thirdWrapper {
+    padding: 20px 0 20px 0;
+}
+
+.nextGenWrapper {
+    width: 60%;
+    margin: 0 auto;
+    padding-top: 3rem;
+}
+
+.thirdWrapperTitle {
+    font-size: 45px;
+    font-weight: 800;
+    text-align: center;
+}
+
+.thirdWrapperPara {
+    font-size: 18px;
+    text-align: center;
+    font-weight: 500;
+    color: #003c63;
+}
+
+.btnThirdDev {
+    display: block;
+    margin: 0 auto;
+    padding: 1% 3%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: transparent;
+    transition: 0.5s;
+}
+
+.btnThirdDev:hover {
+    border-radius: 0px;
+    color: #fff;
+    border: 1px solid #fff;
+    background-color: #F52C6F;
+
+}
+
+.contentBox {
+    box-shadow: 6px 6px 0 0 #003c63;
+    border: 1px solid #003c63;
+    border-radius: 8px;
+    background-color: #fcf1eb;
+    /* padding: 0px 0 10px 0; */
+}
+
+.innersection {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 4px 2px 2px 2px;
+}
+
+.nexTitle {
+    font-size: 17px;
+    font-weight: 600;
+    margin-top: 10px;
+    color: #612984;
+}
+
+.nexPara {
+    font-size: 16px;
+    text-align: center;
+}
+
+
+#page3 {
+    height: 70vh;
+    width: 100%;
+
+    background-color: #2d3436;
+    background-image: linear-gradient(315deg, #2d3436 0%, #d3d3d3 74%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding-bottom: 70px;
+}
+
+#page3 p {
+    font-size: 17px;
+    font-weight: 600;
+    /* width:45%; */
+    text-align: center;
+    color: #000;
+    margin-left: 50px;
+}
+
+#page3 img {
+    position: absolute;
+    height: 350px;
+    width: 500px;
+    color: #fff;
+    object-fit: cover;
+}
+
+#page3 #colon1 {
+    left: 4%;
+    top: 29%;
+    width: 50px;
+    height: 40px;
+}
+
+#page3 #colon2 {
+    bottom: 35%;
+    right: 50%;
+    width: 50px;
+    height: 40px;
+}
+
+/* .page3Img{
+    background-image: url('images/game\ changer.avif');
+    height: 450px;
+    background-repeat: no-repeat;
+  } */
+
+
+
+::marker {
+    color: red;
+}
+
+.chartWrapper{
+    padding-top:40px;
+    padding-bottom: 40px;
+}
+
+
+ul{
+    list-style: disc;
+}
+
+.chart-right-wrapper ul li {
+    color: #fff;
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+
+.chart-left-wrapper ul li {
+    color: #fff;
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+.chart-left-wrapper ul span{
+    display: inline-block;
+    margin-bottom: 43px;
+}
+
+
+
+.chart-left-wrapper ul p {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    font-style: italic;
+}
+.chart-right-wrapper ul p {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    font-style: italic;
+}
+
+#columnWrapper{
+    background-color: #000;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.columnWrapperTitle{
+    color:#0070AF;
+    font-size: 30px;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.colSpantitle{
+    font-size: 2.6rem;
+    font-weight: 800;
+    color: #F52C6F;
+}
+.oneWrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* border: 1px solid #5c5858; */
+    border-radius: 5px;
+    padding-bottom: 35px;
+}
+
+.oneWrapper h4{
+    color: #fff;
+    font-size:17px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding-top: 23px;
+}
+
+.oneWrapper .colPara{
+    color: #fff;
+    text-align: center;
+    letter-spacing: 1px;
+    font-weight: 300;
+    font-size: 15px;
+}
+
+.numberHeading{
+    font-size: 65px;
+    color:#F52C6F;
+    font-weight: 900;
+}
+
+.logo img{
+    width:250px !important;
+}
+
+.logo{
+    display: flex;
+    justify-content: space-evenly;
+    /* align-items: center; */
+}
+
+#clientLogoSection{
+    padding-top: 72px;
+    padding-bottom: 72px;
+    background-color: #2d3436;
+    background-image: linear-gradient(315deg, #2d3436 0%, #d3d3d3 74%);
+}
+
+
+#clientLogoSection .logoTitle{
+    font-size:2.3rem;
+    font-weight: 700;
+    /* padding-left:67px ; */
+}
+
+.Dev-Img{
+    /* width:500px; */
+    height: 350px;
+    object-fit: cover;
+}
+.Dev_Title{
+    font-size: 29px;
+    font-weight: 600;
+}
+
+.Dev_Subtitle{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.innerBox{
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    padding: 19px 5px 0 10px;
+}
+
+.innerBox ul li{
+    line-height: 1.8em;
+}
+.footer-text{
+    display: block;
+    color:#fff;
+    font-size: 15px;
+    letter-spacing: 1px;
+    text-align: center;
+    padding-top:10px;
+    padding-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/************************ ....feature...scroll css..start *********************/
+#scroll {
+    width: 100%;
+    gap: 10vh;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #202020;
+}
+
+.cards {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 80vh;
+}
+
+#card-one {
+    top: 130%;
+    background-color: #383737;
+}
+
+#card-two {
+    top: 230%;
+    background-color: #fff;
+}
+
+#card-three {
+    top: 250%;
+    background-color: #383737;
+}
+
+#card-four {
+    top: 270%;
+    background-color: #fff;
+}
+
+.text-img {
+    width: 5vw;
+    height: 5vw;
+    background-size: cover;
+    background-position: center;
+}
+
+.text {
+    position: absolute;
+    width: 100%;
+    top: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.text h1 {
+    font-size: 3vw;
+    color: #fff;
+    text-align: center;
+}
+
+.text p {
+    font-size: 1vw;
+    color: rgb(126, 126, 126);
+    text-align: center;
+}
+
+.contentCard .cardTitle {
+    font-size: 40px;
+    font-weight: 700;
+    color: white;
+    padding: 4rem 0 0 20px;
+}
+
+.innerCard {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.inner-card-left {
+    width: 35%
+}
+
+.inner-card-right {
+    width: 65%;
+}
+
+.contentCardPara {
+    font-size: 16px;
+    /* text-align: center; */
+    color: #fff;
+    /* margin-left: 55px; */
+    padding-top: 5rem;
+}
+
+.innerCard .num {
+    font-size: 20px;
+    color: #F52C6F;
+    font-weight: 700;
+}
+
+.innerPara {
+    font-size: 15px;
+    font-weight: 400;
+    color: #fff;
+    margin-left: 15px;
+    line-height: 1.2em;
+    letter-spacing: 1px;
+}
+
+.inner-box {
+    border: 1px solid #777;
+    padding: 17px 0 0 0;
+
+}
+
+
+.custom_Dev {
+    display: flex;
+    padding: 20px 0 0 10px;
+
+}
+.mobileView{
+    display: none;
+}
+
+/******************** ....feature...scroll css..end  ********************/
+
+
+
+
+
+
+
+
+
+
+
+
+/***************** .....media query start.....******************** */
+
+@media (min-width:992px) {
+    #secondWrapper {
+        width: 90%;
+    }
+}
+
+@media (min-width:320px) and (max-width:992px) {
+    .nextGenWrapper {
+        width: 90%;
+    }
+
+    #clientLogoSection .logoTitle{
+        /* font-size:2.3rem; */
+        font-weight: 700;
+        padding-left:67px;
+        text-align: center;
+    }
+}
+
+@media(min-width:320px) and (max-width:768px) {
+    .thirdWrapperTitle {
+        font-size: 27px;
+    }
+
+    #clientLogoSection .logoTitle{
+        font-size:30px;
+    }
+}
+
+@media(min-width:320px) and (max-width:355px) {
+    .mainTitle {
+        font-size: 35px;
+    }
+}
+
+@media(min-width:320px) and (max-width:532px){
+    .logo img{
+        width:100% !important;
+    }
+    .logoTitle{
+        padding-left: 0px !important;
+        font-size: 26px !important;
+    }
+}
+
+@media (min-width:0px) and (max-width:1000px){
+    #scroll{
+        display: none;
+    }
+
+    .mobileView{
+        display: block;
+    }
+}
+
+
+@media (min-width:0px) and (max-width:350px){
+    .colSpantitle{
+        font-size:30px;
+    }
+
+
+}
+
+/***************** .....media query end.....******************** */
