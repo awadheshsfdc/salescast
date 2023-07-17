@@ -180,7 +180,58 @@ gsap.from("#secondWrapper .aboutImg",{
         scrub:2
     }
 
-   })
+   });
+
+ gsap.from("#forthWrapper .innersection",{
+    y:100,
+    opacity:0,
+    duration:1,
+    stagger:0.3,
+    scrollTrigger:{
+        trigger:"#forthWrapper .innersection",
+        scroller:"body",
+        start: "top 120%",
+        end:"top 30%",
+        scrub:2
+    }
+   });
+
+   gsap.from("#columnWrapper .oneWrapper",{
+    scale:0.5,
+    opacity:0,
+    duration:1,
+    stagger:0.3,
+    scrollTrigger:{
+        trigger:"#columnWrapper .oneWrapper",
+        scroller:"body",
+        start:"top 125%",
+        end:"top 50%",
+        scrub:2
+    }
+   });
+
+   gsap.from("#columnWrapper .columnWrapperTitle",{
+    scale:0.5,
+    duration:1,
+    stagger:0.3,
+    scrollTrigger:{
+        trigger:"#columnWrapper .columnWrapperTitle",
+        scroller:"body",
+        scrub:2
+    }
+   });
+
+   gsap.from(".chartWrapper .chartImg",{
+    scale:1.3,
+    duration:1,
+    stagger:0.3,
+    scrollTrigger:{
+        trigger:".chartWrapper .chartImg",
+        scroller:"body",
+        scrub:2
+    }
+   });
+
 
   
 // var swiper = new Swiper(".mySwiper", {
