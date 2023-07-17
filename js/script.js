@@ -175,7 +175,6 @@ gsap.from("#secondWrapper .aboutImg",{
     scrollTrigger:{
         trigger:"#thirdWrapper .innersection",
         scroller:"body",
-        markers:true,
         start:"top 90%",
         end:"top 50%",
         scrub:2
