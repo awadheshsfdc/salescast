@@ -141,6 +141,48 @@ gsap.from(".imgWrapper", {
     delay: '0.5',
     duration: 1
   });
+
+
+
+gsap.from("#secondWrapper .aboutImg",{
+    scale:0,
+    opacity:0,
+    duration:1,
+    stagger:0.3,
+    scrollTrigger:{
+        trigger:"#secondWrapper .aboutImg",
+        scroller:"body"
+    }
+  });
+ 
+
+   gsap.from(".nextGenWrapper .thirdWrapperTitle",{
+    scale:0.5,
+    duration:1,
+    stagger:0.3,
+    scrollTrigger:{
+        trigger:".nextGenWrapper .thirdWrapperTitle",
+        scroller:"body",
+        scrub:2
+    }
+   });
+
+   gsap.from("#thirdWrapper .innersection",{
+    scale:0,
+    duration:1,
+    opacity:0,
+    stagger:0.3,
+    scrollTrigger:{
+        trigger:"#thirdWrapper .innersection",
+        scroller:"body",
+        markers:true,
+        start:"top 90%",
+        end:"top 50%",
+        scrub:2
+    }
+
+   })
+
   
 // var swiper = new Swiper(".mySwiper", {
 //     slidesPerView: 1,
