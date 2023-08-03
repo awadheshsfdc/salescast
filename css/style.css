@@ -35,14 +35,7 @@
     color: #fff;
 }
 
-#cursor {
-    width: 20px;
-    height: 20px;
-    background-color: #95c11e;
-    border-radius: 50%;
-    position: fixed;
-    z-index: 99;
-}
+
 
 
 #main {
@@ -84,7 +77,7 @@
     border: 1px solid #fff;
     padding: 2% 4%;
     background-color: transparent;
-    
+
 
 }
 
@@ -246,13 +239,13 @@
     color: red;
 }
 
-.chartWrapper{
-    padding-top:40px;
+.chartWrapper {
+    padding-top: 40px;
     padding-bottom: 40px;
 }
 
 
-ul{
+ul {
     list-style: disc;
 }
 
@@ -269,7 +262,8 @@ ul{
     letter-spacing: 1px;
     font-weight: 500;
 }
-.chart-left-wrapper ul span{
+
+.chart-left-wrapper ul span {
     display: inline-block;
     margin-bottom: 43px;
 }
@@ -283,6 +277,7 @@ ul{
     letter-spacing: 1px;
     font-style: italic;
 }
+
 .chart-right-wrapper ul p {
     color: #fff;
     font-size: 16px;
@@ -291,25 +286,26 @@ ul{
     font-style: italic;
 }
 
-#columnWrapper{
+#columnWrapper {
     background-color: #000;
     padding-top: 20px;
     padding-bottom: 20px;
 }
 
-.columnWrapperTitle{
-    color:#0070AF;
+.columnWrapperTitle {
+    color: #0070AF;
     font-size: 30px;
     font-weight: 600;
     font-family: 'Montserrat', sans-serif;
 }
 
-.colSpantitle{
+.colSpantitle {
     font-size: 2.6rem;
     font-weight: 800;
     color: #F52C6F;
 }
-.oneWrapper{
+
+.oneWrapper {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -319,15 +315,15 @@ ul{
     padding-bottom: 35px;
 }
 
-.oneWrapper h4{
+.oneWrapper h4 {
     color: #fff;
-    font-size:17px;
+    font-size: 17px;
     font-weight: 500;
     letter-spacing: 1px;
     padding-top: 23px;
 }
 
-.oneWrapper .colPara{
+.oneWrapper .colPara {
     color: #fff;
     text-align: center;
     letter-spacing: 1px;
@@ -335,23 +331,23 @@ ul{
     font-size: 15px;
 }
 
-.numberHeading{
+.numberHeading {
     font-size: 65px;
-    color:#F52C6F;
+    color: #F52C6F;
     font-weight: 900;
 }
 
-.logo img{
-    width:250px !important;
+.logo img {
+    width: 250px !important;
 }
 
-.logo{
+.logo {
     display: flex;
     justify-content: space-evenly;
     /* align-items: center; */
 }
 
-#clientLogoSection{
+#clientLogoSection {
     padding-top: 72px;
     padding-bottom: 72px;
     background-color: #2d3436;
@@ -359,43 +355,45 @@ ul{
 }
 
 
-#clientLogoSection .logoTitle{
-    font-size:2.3rem;
+#clientLogoSection .logoTitle {
+    font-size: 2.3rem;
     font-weight: 700;
     /* padding-left:67px ; */
 }
 
-.Dev-Img{
+.Dev-Img {
     /* width:500px; */
     height: 350px;
     object-fit: cover;
 }
-.Dev_Title{
+
+.Dev_Title {
     font-size: 29px;
     font-weight: 600;
 }
 
-.Dev_Subtitle{
+.Dev_Subtitle {
     font-size: 18px;
     font-weight: 500;
 }
 
-.innerBox{
+.innerBox {
     border: 1px solid #ccc;
     border-radius: 7px;
     padding: 19px 5px 0 10px;
 }
 
-.innerBox ul li{
+.innerBox ul li {
     line-height: 1.8em;
 }
-.footer-text{
+
+.footer-text {
     display: block;
-    color:#fff;
+    color: #fff;
     font-size: 15px;
     letter-spacing: 1px;
     text-align: center;
-    padding-top:10px;
+    padding-top: 10px;
     padding-bottom: 10px;
 }
 
@@ -534,7 +532,8 @@ ul{
     padding: 20px 0 0 10px;
 
 }
-.mobileView{
+
+.mobileView {
     display: none;
 }
 
@@ -564,10 +563,10 @@ ul{
         width: 90%;
     }
 
-    #clientLogoSection .logoTitle{
+    #clientLogoSection .logoTitle {
         /* font-size:2.3rem; */
         font-weight: 700;
-        padding-left:67px;
+        padding-left: 67px;
         text-align: center;
     }
 }
@@ -577,8 +576,8 @@ ul{
         font-size: 27px;
     }
 
-    #clientLogoSection .logoTitle{
-        font-size:30px;
+    #clientLogoSection .logoTitle {
+        font-size: 30px;
     }
 }
 
@@ -588,31 +587,33 @@ ul{
     }
 }
 
-@media(min-width:320px) and (max-width:532px){
-    .logo img{
-        width:100% !important;
+@media(min-width:320px) and (max-width:532px) {
+    .logo img {
+        width: 100% !important;
     }
-    .logoTitle{
+
+    .logoTitle {
         padding-left: 0px !important;
         font-size: 26px !important;
     }
 }
 
-@media (min-width:0px) and (max-width:1000px){
-    #scroll{
+@media (min-width:0px) and (max-width:1000px) {
+    #scroll {
         display: none;
     }
 
-    .mobileView{
+    .mobileView {
         display: block;
     }
 }
 
 
-@media (min-width:0px) and (max-width:350px){
-    .colSpantitle{
-        font-size:30px;
+@media (min-width:0px) and (max-width:350px) {
+    .colSpantitle {
+        font-size: 30px;
     }
+
 }
 
 @media (min-width:768px) and (max-width:992px){
@@ -635,6 +636,12 @@ ul{
     .chartContentRightWrapper{
         margin-left: 100px !important;
         margin-top: 20px !important;
+    }
+}
+
+@media(min-width:1024px) and (max-width:1200px){
+    .oneWrapper h4{
+        font-size:16px;
     }
 }
 
