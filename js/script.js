@@ -1,71 +1,6 @@
-var curs = document.querySelector("#cursor")
-
-document.addEventListener("mousemove", function(dets){
-    curs.style.left = dets.x+"px"
-    curs.style.top = dets.y+"px"
-})
 
 
 
-// gsap.from("#colon1",{
-//     y:-70,
-//     x:-70,
-//     scrollTrigger:{
-//         trigger:"#colon1",
-//         scroller:"body",
-//         // markers:true,
-//         start:"top 30%",
-//         end:"top 45%",
-//         scrub:3
-//     }
-// })
-// gsap.from("#colon2",{
-//     y:70,
-//     x:70,
-//     scrollTrigger:{
-//         trigger:"#colon1",
-//         scroller:"body",
-//         // markers:true,
-//         start:"top 30%",
-//         end:"top 0%",
-//         scrub:3
-//     }
-// })
-
-// gsap.to("#navBar",{
-//     backgroundColor:"#fff",
-//     height:"60px",
-//     duration:"0.5",
-//     scrollTrigger:{
-//         trigger:"#navBar",
-//         scroller:"body",
-//         start:"top -10%",
-//         end:"top -11%",
-//         scrub:1
-//     }
-// })
-
-// gsap.to(".custom_Btn_Dev",{
-//     backgroundColor:"#0176d3",
-//     scrollTrigger:{
-//         trigger:".custom_Btn_Dev",
-//         scroller:"body",
-//         start:"top -10%",
-//         end:"top -11%",
-//         scrub:1
-//     }
-// })
-
-// gsap.to("#main",{
-//     backgroundColor:"#000",
-//     scrollTrigger:{
-//         trigger:"#main",
-//         scroller:"body",
-//         start:"top -25%",
-//         end:"top -70%",
-//         scrub:2
-//     }
-// })
 
 
 
@@ -129,9 +64,11 @@ tl
 }, 'd')
 
 
+
+
 gsap.from(".leftWrapper", {
     opacity: 0, 
-    y: 100, 
+    y: -100, 
     duration: 1
   });
 
@@ -142,9 +79,7 @@ gsap.from(".imgWrapper", {
     duration: 1
   });
 
-
-
-gsap.from("#secondWrapper .aboutImg",{
+  gsap.from("#secondWrapper .aboutImg",{
     scale:0,
     opacity:0,
     duration:1,
@@ -175,6 +110,7 @@ gsap.from("#secondWrapper .aboutImg",{
     scrollTrigger:{
         trigger:"#thirdWrapper .innersection",
         scroller:"body",
+        // markers:true,
         start:"top 90%",
         end:"top 50%",
         scrub:2
@@ -182,7 +118,7 @@ gsap.from("#secondWrapper .aboutImg",{
 
    });
 
- gsap.from("#forthWrapper .innersection",{
+   gsap.from("#forthWrapper .innersection",{
     y:100,
     opacity:0,
     duration:1,
@@ -233,6 +169,10 @@ gsap.from("#secondWrapper .aboutImg",{
    });
 
 
+
+
+
+   
   
 // var swiper = new Swiper(".mySwiper", {
 //     slidesPerView: 1,
