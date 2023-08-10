@@ -7,6 +7,8 @@
     <title>salescast</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link href="css/style.css" rel="stylesheet" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 
     <!-- <link rel="stylesheet" href="css/swiper.css" /> -->
     <!-- <link rel="stylesheet" href="css/slider.css" /> -->
@@ -27,11 +29,74 @@
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+            <!-- <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                 <form class="d-flex mb-2 mb-lg-0">
                     <button class="btn custom_Btn_Dev" type="submit">Contact Us</button>
                 </form>
+
+            </div> -->
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary custom_Btn_Dev" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                Contact Us
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body formWrapper">
+                            <form action="#">
+                                <div class="form-group">
+                                    <div class="content">
+                                        <div class="box-content">
+                                            <label for="firstname">First Name</label>
+                                        </div>
+                                        <input type="text" placeholder="First Name" required>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="content">
+                                        <div class="box-content">
+                                            <label for="lastname">Last Name</label>
+                                        </div>
+                                        <input type="text" placeholder="Last Name" required>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="content">
+                                        <div class="box-content">
+                                            <label for="email">Work Email</label>
+                                        </div>
+                                        <input type="email" placeholder="Work Email" required>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="content">
+                                        <div class="box-content">
+                                            <label for="number">Phone</label>
+                                        </div>
+                                        <input type="phone" placeholder="Phone Number" required>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="content">
+                                        <div class="box-content">
+                                            <label for="company">Company</label>
+                                        </div>
+                                        <input type="text" placeholder="Company" required>
+                                    </div>
+                                </div>
+                                <button type="button" class="btn btn-primary btnForm">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
             </div>
+
 
         </div>
     </nav>
@@ -44,7 +109,9 @@
         <div id="firstwrapper">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-7 leftWrapper">
+                    <div class="col-lg-7 leftWrapper" data-aos="fade-right"
+                    data-aos-offset="300"
+                    data-aos-easing="ease-in-sine">
                         <div class="mb-3">
                             <h1 class="mainTitle">The Sales Accelerator
                                 Unleashing
@@ -56,11 +123,81 @@
                                 funnels
                                 and execute on their targets
                             </p>
-                            <button class="Btn_Dev">Book a Demo</button>
+                            <!-- <button class="Btn_Dev">Book a Demo</button> -->
+                        </div>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary Btn_Dev" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            Book a Demo
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body formWrapper">
+                                        <form action="#">
+                                            <div class="form-group">
+                                                <div class="content">
+                                                    <div class="box-content">
+                                                        <label for="firstname">First Name</label>
+                                                    </div>
+                                                    <input type="text" placeholder="First Name" required>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="content">
+                                                    <div class="box-content">
+                                                        <label for="lastname">Last Name</label>
+                                                    </div>
+                                                    <input type="text" placeholder="Last Name" required>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="content">
+                                                    <div class="box-content">
+                                                        <label for="email">Work Email</label>
+                                                    </div>
+                                                    <input type="email" placeholder="Work Email" required>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="content">
+                                                    <div class="box-content">
+                                                        <label for="number">Phone</label>
+                                                    </div>
+                                                    <input type="phone" placeholder="Phone Number" required>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="content">
+                                                    <div class="box-content">
+                                                        <label for="company">Company</label>
+                                                    </div>
+                                                    <input type="text" placeholder="Company" required>
+                                                </div>
+                                            </div>
+                                            <button type="button" class="btn btn-primary btnForm">Submit</button>
+                                        </form>
+                                    </div>
+
+                                </div>
+                            </div>
                         </div>
 
+
+
+
                     </div>
-                    <div class="col-lg-5 imgWrapper">
+                    <div class="col-lg-5 imgWrapper" data-aos="fade-left"
+                    data-aos-anchor="#example-anchor"
+                    data-aos-offset="500"
+                    data-aos-duration="500">
                         <img class="w-100 mainBannerImg" src="images/home page banner.jpg">
                     </div>
                 </div>
@@ -72,17 +209,17 @@
         <div id="secondWrapper">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-3">
+                    <div class="col-lg-3" data-aos="zoom-in">
                         <img class="aboutImg w-100" src="images/about us first img.jpg">
                     </div>
-                    <div class="col-lg-6 aboutCenter">
+                    <div class="col-lg-6 aboutCenter" data-aos="flip-up" data-aos-duration="1000">
                         <h2 class="text-center aboutTitle" style="color:#F52C6F">About Us</h2>
                         <p class="text-center aboutPara">Salescast is a tool developed specifically for sales teams
                             within Salesforce that enables
                             them to gain insights into their sales funnels and effectively achieve their goals.
                         </p>
                     </div>
-                    <div class="col-lg-3">
+                    <div class="col-lg-3" data-aos="zoom-in" data-aos-duration="500">
                         <img class="aboutImg w-100" src="images/about us secong img.jpg">
                     </div>
                 </div>
@@ -93,7 +230,8 @@
         <section id="thirdWrapper">
             <div class="container">
                 <div class="nextGenWrapper pb-4">
-                    <h2 class="thirdWrapperTitle">
+                    <h2 class="thirdWrapperTitle" data-aos="flip-up"
+                    data-aos-duration="1500">
                         <span style="color:#F52C6F">Revenue Operations Power of Next-Gen</span>
                         <span style="color:#0070AF">Strategies</span>
                     </h2>
@@ -104,14 +242,14 @@
                 </div>
                 <div class="row justify-content-center">
                     <div class="col-lg-4 col-md-6 mb-3">
-                        <div class="innersection h-100 ">
+                        <div class="innersection h-100 " data-aos="zoom-in" data-aos-duration="800">
                             <img style="width:60px" height="60px" src="images/tracking.png">
                             <h4 class="nexTitle">TRACK ORG CHANGES</h4>
                             <p class="nexPara">Rely on Salesforce accuracy</p>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 mb-3">
-                        <div class="innersection h-100 pt-3">
+                        <div class="innersection h-100 pt-3" data-aos="zoom-in" data-aos-duration="1500">
                             <img style="width:60px" height="60px" src="images/quota.png">
                             <h4 class="nexTitle">CREATING MULTIPLE QUOTAS</h4>
                             <p class="nexPara">Set & Attain targets outside of just bookings</p>
@@ -120,14 +258,14 @@
                 </div>
                 <div class="row justify-content-center">
                     <div class="col-lg-4 col-md-6 mb-3">
-                        <div class="innersection h-100">
+                        <div class="innersection h-100" data-aos="flip-up" data-aos-duration="800">
                             <img style="width:60px" height="60px" src="images/funnel.png">
                             <h4 class="nexTitle">FULL FUNNEL</h4>
                             <p class="nexPara">Track the full sales funnel</p>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 mb-3">
-                        <div class="innersection h-100 pt-3">
+                        <div class="innersection h-100 pt-3" data-aos="flip-up" data-aos-duration="800">
                             <img style="width:60px" height="60px" src="images/calculator.png">
                             <h4 class="nexTitle">CALCULATOR</h4>
                             <p class="nexPara">Set goals that you know will get you <br>to where you need to be</p>
@@ -138,7 +276,7 @@
         </section>
 
         <!-- ....scroll features..... -->
-        <div id="scroll">
+        <!-- <div id="scroll">
             <div class="text">
                 <div class="text-img"></div>
                 <h1>Our Tracking Features</h1>
@@ -323,75 +461,94 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
 
-        <section class="mobileView">
-            <div class="col text-center">
-                <h2>Our Tracking Features</h2>
-                <p>salescast is a native SalesForce tool that allows sales team to uderstand<br>
-                    their sales funnels and execute on their targets</p>
-            </div>
-            <div class="box-one">
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-md-6 col-sm-12 mb-3">
-                            <div class="innerBox h-100">
-                                <h2 class="fs-4">Tracking Org Changes</h2>
-                                <p>Are they really a start? Or just had a good partner</p>
+
+        <section class="bg-dark">
+            <div class="container">
+                <div class="devCard_cont py-5">
+                    <h2 class="cardDev_title">Our Tracking Features</h2>
+                    <p class="cardDev_para">Salescast is a native Salesforce tool that allows sales team to uderstand
+                        their sales funnels and execute on their targets</p>
+                    <ul id="cards">
+                        <li class="card devCard" id="card1">
+                            <div class="card-body" data-aos="zoom-in-up" data-aos-duration="1000">
+                                <!-- <h2>Card 1</h2> -->
+                                <div class="card-content">
+                                    <span>1</span>
+                                    <h5 class="card-title">Tracking ORG Changes</h5>
+                                </div>
+                                <p class="card-text">Are they really a star? Or just had a good quarter</p>
+                                <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
                                 <ul>
-                                    <li>SalesCast is native to Salesforce</li>
+                                    <li>Salescast is native to Salesforce</li>
                                     <li>It enables sales operations to track all changes in a Sales Team</li>
                                     <li>This allows accurate reporting on each rep and leader</li>
-                                    <li>Enables leaders to see progression & digression of reps and leaders</li>
+                                    <li class="border-0">Enables leaders to see progression & digression of reps and
+                                        leaders</li>
                                 </ul>
                             </div>
-                        </div>
-                        <div class="col-md-6 col-sm-12 mb-3">
-                            <div class="innerBox h-100">
-                                <h2 class="fs-4">Creating Multiple Quotas</h2>
-                                <p>Are you measuring your top of funnel inputs?</p>
+                        </li>
+                        <li class="card devCard" id="card2">
+                            <div class="card-body">
+
+                                <div class="card-content">
+                                    <span>2</span>
+                                    <h5 class="card-title">Creating Multiple Quotas</h5>
+                                </div>
+                                <p class="card-text">Are you measuring your top of funnel inputs?</p>
+                                <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
                                 <ul>
                                     <li>Establish a standard of excellence across entire pipeline</li>
                                     <li>Create quotas for calls, appts, demos, opps created, bookings, etc.</li>
-                                    <li>This allows accurate reporting on each rep and leader</li>
-                                    <li>Enables leaders to see progression & digression of reps and leaders</li>
+                                    <li>Assign multiple quotas/targets to your SDRs, AEs, and Managers</li>
+                                    <li class="border-0">Create specific quotas/ targets to push behavior</li>
                                 </ul>
                             </div>
-                        </div>
-                    </div>
-
-                    <div class="row justify-content-center">
-                        <div class="col-md-6 col-sm-12 mb-3">
-                            <div class="innerBox h-100">
-                                <h2 class="fs-4">Full Funnel View</h2>
-                                <p>Do you have confidence that the hockey stick at end of month is coming</p>
+                        </li>
+                        <li class="card devCard" id="card3">
+                            <div class="card-body">
+                                <div class="card-content">
+                                    <span>3</span>
+                                    <h5 class="card-title">Full Funnel View</h5>
+                                </div>
+                                <p class="card-text">Do you have confidence that they hockey stick at end of month is
+                                    coming?</p>
+                                <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
                                 <ul>
                                     <li>Have a full funnel view for your reps and leaders to see</li>
                                     <li>See pacing of the top of funnel metrics leading to bottom of funnel outputs</li>
                                     <li>Create custom funnel views based on role and team</li>
-                                    <li>Identify where Sales Pipeline is falling ahort and correct mid period</li>
+                                    <li class="border-0">Identify where Sales Pipeline is falling short and correct mid
+                                        period</li>
                                 </ul>
                             </div>
-                        </div>
-                        <div class="col-md-6 col-sm-12 mb-3">
-                            <div class="innerBox h-100">
-                                <h2 class="fs-4">Calculator</h2>
-                                <p>How does my funnel need to perform in order for me to hit our bookings goals</p>
+                        </li>
+                        <li class="card devCard" id="card4">
+                            <div class="card-body">
+                                <div class="card-content">
+                                    <span>4</span>
+                                    <h5 class="card-title">Calculator</h5>
+                                </div>
+                                <p class="card-text">How does my funnel need to perform in order for me to hit our
+                                    booking goals?</p>
+                                <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
                                 <ul>
                                     <li>Each rep can create commits for each quota type and see what their output will
                                         be</li>
-                                    <li>Be able to create commits on top of funnel inputs(calls, appts) and see where
+                                    <li>Be able to create commits on top of funnel inputs (calls, appts) and see where
                                         bookings will land</li>
-                                    <li>Set goals bease on peers or team averages, to pace themselves for success</li>
-                                    <li>Easily create templates of targets for new reps to follow and measure attainment
-                                        against</li>
+                                    <li>Set Goals based on peers or team averages, to pace themselves for success</li>
+                                    <li class="border-0">Easily create templates of targets for new reps to follow and
+                                        measure attainment against</li>
                                 </ul>
                             </div>
-                        </div>
-                    </div>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </section>
+
 
         <!-- ...why now.... -->
         <section id="forthWrapper">
@@ -403,7 +560,7 @@
                     </h2>
                 </div>
                 <div class="row justify-content-center">
-                    <div class="col-lg-4 col-md-6 mb-3">
+                    <div class="col-lg-4 col-md-6 mb-3" data-aos="zoom-in-up" data-aos-duration="800">
                         <div class="innersection h-100 p-3">
                             <h4 class="nexTitle">CLEAN DATA</h4>
                             <p class="nexPara">There's a lot of flashy tools that come out, but none solve the problem
@@ -411,7 +568,7 @@
                                 Salesforce.</p>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 mb-3">
+                    <div class="col-lg-4 col-md-6 mb-3" data-aos="zoom-in-up" data-aos-duration="1500">
                         <div class="innersection h-100 p-3">
                             <h4 class="nexTitle">SALES TEAMS</h4>
                             <p class="nexPara">Sales need to be able create motions that can be replicated each month,
@@ -421,14 +578,14 @@
                     </div>
                 </div>
                 <div class="row justify-content-center">
-                    <div class="col-lg-4 col-md-6 mb-3">
+                    <div class="col-lg-4 col-md-6 mb-3" data-aos="zoom-in" data-aos-duration="1800">
                         <div class="innersection h-100 p-3">
                             <h4 class="nexTitle">FINANCIAL</h4>
                             <p class="nexPara">Sales teams are expensive, with companies saving money on middle
                                 management, its critical to be able to effectively manage more with less</p>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 mb-3">
+                    <div class="col-lg-4 col-md-6 mb-3" data-aos="zoom-in-up" data-aos-duration="1000">
                         <div class="innersection h-100 p-3">
                             <h4 class="nexTitle">ACTIONABLE</h4>
                             <p class="nexPara">Profitability and efficiency have risen in importance. Sales leaders need
@@ -727,22 +884,24 @@
 
 
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
         integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"
         integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
-    <!-- <script src="js/swiper-bundle.min.js"></script> -->
 
 
 
     <script src="js/script.js">
     </script>
 
-    <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 
 </body>
 
