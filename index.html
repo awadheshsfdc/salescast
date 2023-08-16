@@ -55,9 +55,17 @@
                                     <div class="form-group">
                                         <div class="content">
                                             <div class="box-content">
-                                                <label for="fullname">Full Name</label>
+                                                <label for="firstName">First Name</label>
                                             </div>
-                                            <input type="text" id="name" placeholder="Full Name" required>
+                                            <input type="text" id="firstName" placeholder="First Name" required>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="content">
+                                            <div class="box-content">
+                                                <label for="lastName">Last Name</label>
+                                            </div>
+                                            <input type="text" id="lastName" placeholder="Last Name" required>
                                         </div>
                                     </div>
                                     <div class="form-group">
@@ -84,7 +92,8 @@
                                             <input type="text" id="company" placeholder="Company" required>
                                         </div>
                                     </div>
-                                    <button type="button" class="btn btn-primary btnForm" onclick="sendMail()">Submit</button>
+                                    <button type="button" class="btn btn-primary btnForm"
+                                        onclick="sendMail()">Submit</button>
                                 </form>
                             </div>
 
@@ -119,10 +128,12 @@
                             </p>
                             <!-- <button class="Btn_Dev">Book a Demo</button> -->
                         </div>
-                        <button type="button" class="btn custom_Btn_Dev" data-bs-toggle="modal" data-bs-target="#exampleModal">
+
+                        <button type="button" class="btn custom_Btn_Dev" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
                             Book a Demo
                         </button>
-        
+
                         <!-- Modal -->
                         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
                             aria-hidden="true">
@@ -137,9 +148,17 @@
                                             <div class="form-group">
                                                 <div class="content">
                                                     <div class="box-content">
-                                                        <label for="fullname">Full Name</label>
+                                                        <label for="firstName">First Name</label>
                                                     </div>
-                                                    <input type="text" id="name" placeholder="Full Name" required>
+                                                    <input type="text" id="firstName" placeholder="First Name" required>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="content">
+                                                    <div class="box-content">
+                                                        <label for="lastName">Last Name</label>
+                                                    </div>
+                                                    <input type="text" id="lastName" placeholder="Last Name" required>
                                                 </div>
                                             </div>
                                             <div class="form-group">
@@ -166,14 +185,14 @@
                                                     <input type="text" id="company" placeholder="Company" required>
                                                 </div>
                                             </div>
-                                            <button type="button" class="btn btn-primary btnForm" onclick="sendMail()">Submit</button>
+                                            <button type="button" class="btn btn-primary btnForm"
+                                                onclick="sendMail()">Submit</button>
                                         </form>
                                     </div>
-        
+
                                 </div>
                             </div>
                         </div>
-
 
 
                     </div>
@@ -861,32 +880,34 @@
         AOS.init();
     </script>
 
-<script>
-    function sendMail() {
-        var params = {
-            name: document.getElementById("name").value,
-            email: document.getElementById("email").value,
-            number: document.getElementById("number").value,
-            company: document.getElementById("company").value,
-        };
+    <script>
+        function sendMail() {
+            var params = {
+                firstName: document.getElementById("firstName").value,
+                lastName: document.getElementById("lastName").value,
+                email: document.getElementById("email").value,
+                number: document.getElementById("number").value,
+                company: document.getElementById("company").value,
+            };
 
-        const serviceID = "service_gsga2vx";
-        const templateID = "template_n5dqrzp";
+            const serviceID = "service_gsga2vx";
+            const templateID = "template_n5dqrzp";
 
-        emailjs.send(serviceID, templateID, params)
-            .then(res => {
-                document.getElementById("name").value = "";
-                document.getElementById("email").value = "";
-                document.getElementById("number").value = "";
-                document.getElementById("company").value = "";
-                console.log(res);
-                alert("Your message sent successfully!!")
+            emailjs.send(serviceID, templateID, params)
+                .then(res => {
+                    document.getElementById("firstName").value = "";
+                    document.getElementById("lastName").value = "";
+                    document.getElementById("email").value = "";
+                    document.getElementById("number").value = "";
+                    document.getElementById("company").value = "";
+                    console.log(res);
+                    alert("Your message sent successfully!!")
 
-            })
-            .catch(err => console.log(err));
+                })
+                .catch(err => console.log(err));
 
-    }
-</script>
+        }
+    </script>
 
 </body>
 
