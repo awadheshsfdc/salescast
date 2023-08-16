@@ -9,9 +9,15 @@
     <link href="css/style.css" rel="stylesheet" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-
     <!-- <link rel="stylesheet" href="css/swiper.css" /> -->
     <!-- <link rel="stylesheet" href="css/slider.css" /> -->
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("HQQPBX5CG9FUCn7eA");
+        })();
+    </script>
 
 
 </head>
@@ -29,74 +35,63 @@
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <!-- <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-                <form class="d-flex mb-2 mb-lg-0">
-                    <button class="btn custom_Btn_Dev" type="submit">Contact Us</button>
-                </form>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
 
-            </div> -->
-            <!-- Button trigger modal -->
-            <button type="button" class="btn btn-primary custom_Btn_Dev" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-                Contact Us
-            </button>
+                <button type="button" class="btn custom_Btn_Dev" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Contact Us
+                </button>
 
-            <!-- Modal -->
-            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-                aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body formWrapper">
-                            <form action="#">
-                                <div class="form-group">
-                                    <div class="content">
-                                        <div class="box-content">
-                                            <label for="firstname">First Name</label>
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body formWrapper">
+                                <form action="#">
+                                    <div class="form-group">
+                                        <div class="content">
+                                            <div class="box-content">
+                                                <label for="fullname">Full Name</label>
+                                            </div>
+                                            <input type="text" id="name" placeholder="Full Name" required>
                                         </div>
-                                        <input type="text" placeholder="First Name" required>
                                     </div>
-                                </div>
-                                <div class="form-group">
-                                    <div class="content">
-                                        <div class="box-content">
-                                            <label for="lastname">Last Name</label>
+                                    <div class="form-group">
+                                        <div class="content">
+                                            <div class="box-content">
+                                                <label for="email">Work Email</label>
+                                            </div>
+                                            <input type="email" id="email" placeholder="Work Email" required>
                                         </div>
-                                        <input type="text" placeholder="Last Name" required>
                                     </div>
-                                </div>
-                                <div class="form-group">
-                                    <div class="content">
-                                        <div class="box-content">
-                                            <label for="email">Work Email</label>
+                                    <div class="form-group">
+                                        <div class="content">
+                                            <div class="box-content">
+                                                <label for="number">Phone</label>
+                                            </div>
+                                            <input type="phone" id="number" placeholder="Phone Number" required>
                                         </div>
-                                        <input type="email" placeholder="Work Email" required>
                                     </div>
-                                </div>
-                                <div class="form-group">
-                                    <div class="content">
-                                        <div class="box-content">
-                                            <label for="number">Phone</label>
+                                    <div class="form-group">
+                                        <div class="content">
+                                            <div class="box-content">
+                                                <label for="company">Company</label>
+                                            </div>
+                                            <input type="text" id="company" placeholder="Company" required>
                                         </div>
-                                        <input type="phone" placeholder="Phone Number" required>
                                     </div>
-                                </div>
-                                <div class="form-group">
-                                    <div class="content">
-                                        <div class="box-content">
-                                            <label for="company">Company</label>
-                                        </div>
-                                        <input type="text" placeholder="Company" required>
-                                    </div>
-                                </div>
-                                <button type="button" class="btn btn-primary btnForm">Submit</button>
-                            </form>
+                                    <button type="button" class="btn btn-primary btnForm" onclick="sendMail()">Submit</button>
+                                </form>
+                            </div>
+
                         </div>
                     </div>
                 </div>
             </div>
-
 
         </div>
     </nav>
@@ -109,9 +104,8 @@
         <div id="firstwrapper">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-7 leftWrapper" data-aos="fade-right"
-                    data-aos-offset="300"
-                    data-aos-easing="ease-in-sine">
+                    <div class="col-lg-7 leftWrapper" data-aos="fade-right" data-aos-offset="300"
+                        data-aos-easing="ease-in-sine">
                         <div class="mb-3">
                             <h1 class="mainTitle">The Sales Accelerator
                                 Unleashing
@@ -125,12 +119,10 @@
                             </p>
                             <!-- <button class="Btn_Dev">Book a Demo</button> -->
                         </div>
-                        <!-- Button trigger modal -->
-                        <button type="button" class="btn btn-primary Btn_Dev" data-bs-toggle="modal"
-                            data-bs-target="#exampleModal">
+                        <button type="button" class="btn custom_Btn_Dev" data-bs-toggle="modal" data-bs-target="#exampleModal">
                             Book a Demo
                         </button>
-
+        
                         <!-- Modal -->
                         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
                             aria-hidden="true">
@@ -145,17 +137,9 @@
                                             <div class="form-group">
                                                 <div class="content">
                                                     <div class="box-content">
-                                                        <label for="firstname">First Name</label>
+                                                        <label for="fullname">Full Name</label>
                                                     </div>
-                                                    <input type="text" placeholder="First Name" required>
-                                                </div>
-                                            </div>
-                                            <div class="form-group">
-                                                <div class="content">
-                                                    <div class="box-content">
-                                                        <label for="lastname">Last Name</label>
-                                                    </div>
-                                                    <input type="text" placeholder="Last Name" required>
+                                                    <input type="text" id="name" placeholder="Full Name" required>
                                                 </div>
                                             </div>
                                             <div class="form-group">
@@ -163,7 +147,7 @@
                                                     <div class="box-content">
                                                         <label for="email">Work Email</label>
                                                     </div>
-                                                    <input type="email" placeholder="Work Email" required>
+                                                    <input type="email" id="email" placeholder="Work Email" required>
                                                 </div>
                                             </div>
                                             <div class="form-group">
@@ -171,7 +155,7 @@
                                                     <div class="box-content">
                                                         <label for="number">Phone</label>
                                                     </div>
-                                                    <input type="phone" placeholder="Phone Number" required>
+                                                    <input type="phone" id="number" placeholder="Phone Number" required>
                                                 </div>
                                             </div>
                                             <div class="form-group">
@@ -179,25 +163,22 @@
                                                     <div class="box-content">
                                                         <label for="company">Company</label>
                                                     </div>
-                                                    <input type="text" placeholder="Company" required>
+                                                    <input type="text" id="company" placeholder="Company" required>
                                                 </div>
                                             </div>
-                                            <button type="button" class="btn btn-primary btnForm">Submit</button>
+                                            <button type="button" class="btn btn-primary btnForm" onclick="sendMail()">Submit</button>
                                         </form>
                                     </div>
-
+        
                                 </div>
                             </div>
                         </div>
 
 
 
-
                     </div>
-                    <div class="col-lg-5 imgWrapper" data-aos="fade-left"
-                    data-aos-anchor="#example-anchor"
-                    data-aos-offset="500"
-                    data-aos-duration="500">
+                    <div class="col-lg-5 imgWrapper" data-aos="fade-left" data-aos-anchor="#example-anchor"
+                        data-aos-offset="500" data-aos-duration="500">
                         <img class="w-100 mainBannerImg" src="images/home page banner.jpg">
                     </div>
                 </div>
@@ -230,8 +211,7 @@
         <section id="thirdWrapper">
             <div class="container">
                 <div class="nextGenWrapper pb-4">
-                    <h2 class="thirdWrapperTitle" data-aos="flip-up"
-                    data-aos-duration="1500">
+                    <h2 class="thirdWrapperTitle" data-aos="flip-up" data-aos-duration="1500">
                         <span style="color:#F52C6F">Revenue Operations Power of Next-Gen</span>
                         <span style="color:#0070AF">Strategies</span>
                     </h2>
@@ -866,42 +846,47 @@
                 <span class="footer-text">Copyright ©2023 Sales Cast. All rights reserved.</span>
             </div>
         </footer>
-
-
     </section>
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
-        integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"
-        integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
-
-
-
+    <!-- <script src="js/swiper-bundle.min.js"></script> -->
     <script src="js/script.js">
     </script>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
-      </script>
+    </script>
+
+<script>
+    function sendMail() {
+        var params = {
+            name: document.getElementById("name").value,
+            email: document.getElementById("email").value,
+            number: document.getElementById("number").value,
+            company: document.getElementById("company").value,
+        };
+
+        const serviceID = "service_gsga2vx";
+        const templateID = "template_n5dqrzp";
+
+        emailjs.send(serviceID, templateID, params)
+            .then(res => {
+                document.getElementById("name").value = "";
+                document.getElementById("email").value = "";
+                document.getElementById("number").value = "";
+                document.getElementById("company").value = "";
+                console.log(res);
+                alert("Your message sent successfully!!")
+
+            })
+            .catch(err => console.log(err));
+
+    }
+</script>
 
 </body>
 
